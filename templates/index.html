@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>All Task Bypass</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+    /* (styles kept identical to user's original CSS) */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background-image: url('http://alltask-bypass.ct.ws/img/bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+        padding: 20px;
+        position: relative;
+    }
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: -1;
+    }
+    .form-container {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 30px 25px;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .logo { width: 80px; height: 80px; margin: 0 auto 15px; background: linear-gradient(135deg, #0072ff, #00c6ff); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; box-shadow: 0 5px 15px rgba(0, 114, 255, 0.4); }
+    .title { font-size: 24px; font-weight: 700; margin-bottom: 10px; background: linear-gradient(270deg, #ff0000, #ff7f00, #00ff00, #0000ff, #4b0082, #9400d3, #ff1493, #ff4500); background-size: 400%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: rainbow-animation 6s linear infinite; }
+    .subtitle { font-size: 14px; color: #666; margin-bottom: 20px; line-height: 1.4; }
+    .divider { height: 2px; background: linear-gradient(90deg, transparent, #0072ff, transparent); margin: 20px 0; }
+    .input-container { position: relative; margin-bottom: 20px; }
+    input[type="text"] { width: 100%; padding: 15px 15px 15px 45px; border: 2px solid #e1e5e9; border-radius: 12px; font-size: 16px; transition: all 0.3s ease; background: #f8f9fa; }
+    input[type="text"]:focus { border-color: #0072ff; background: white; box-shadow: 0 0 0 3px rgba(0, 114, 255, 0.1); outline: none; }
+    .icon { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #0072ff; font-size: 18px; }
+    button { width: 100%; padding: 16px; background: linear-gradient(135deg, #0072ff, #00c6ff); color: white; border: none; border-radius: 12px; font-size: 18px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0, 114, 255, 0.4); }
+    button:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0, 114, 255, 0.6); }
+    .telegram-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 20px; background: linear-gradient(135deg, #0088cc, #00aced); color: white; text-decoration: none; border-radius: 12px; font-weight: 600; margin-top: 15px; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0, 136, 204, 0.4); }
+    .features { margin-top: 25px; text-align: left; }
+    .feature-item { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: #555; }
+    .feature-item i { color: #0072ff; font-size: 16px; }
+    .loading { display: none; margin-top: 15px; }
+    .spinner { width: 30px; height: 30px; border: 3px solid #f3f3f3; border-top: 3px solid #0072ff; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto; }
+    @keyframes rainbow-animation { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    @media (max-width: 480px) { .form-container { padding: 25px 20px; margin: 10px; } .title { font-size: 20px; } input[type="text"] { padding: 14px 14px 14px 40px; font-size: 15px; } button { padding: 15px; font-size: 16px; } .logo { width: 70px; height: 70px; font-size: 20px; } }
+    @media (max-width: 360px) { .form-container { padding: 20px 15px; } .title { font-size: 18px; } .subtitle { font-size: 13px; } }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="logo">
+            <i class="fas fa-bolt"></i>
+        </div>
+        <h1 class="title">MASTER BYPASS SCRIPT</h1>
+        <p class="subtitle">Enter your tracking URL to bypass the task automatically</p>
+        <div class="divider"></div>
+        <form action="/" method="GET" id="bypassForm">
+            <div class="input-container">
+                <i class="fas fa-link icon"></i>
+                <input type="text" id="url" name="url" placeholder="https://app.appsflyer.com" required>
+            </div>
+            <button type="submit" name="submit" id="submitBtn">
+                <i class="fas fa-rocket"></i> BYPASS NOW
+            </button>
+        </form>
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+        </div>
+        <div class="features">
+            <div class="feature-item"><i class="fas fa-check-circle"></i><span>Fast & Automatic Processing</span></div>
+            <div class="feature-item"><i class="fas fa-shield-alt"></i><span>Secure & Reliable</span></div>
+        </div>
+        <a href="tg://resolve?domain=x0star" class="telegram-btn"><i class="fab fa-telegram"></i>Join Our Telegram</a>
+        <p><br><strong style="color: green;">Total Bypass: <strong style="color: red;">{{ total_count }}</strong></strong></p>
+    </div>
+
+    <script>
+        document.getElementById('bypassForm').addEventListener('submit', function() {
+            const submitBtn = document.getElementById('submitBtn');
+            const loading = document.getElementById('loading');
+            submitBtn.style.display = 'none';
+            loading.style.display = 'block';
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = document.querySelectorAll('input');
+            inputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.parentElement.style.transform = 'scale(1.02)';
+                });
+                input.addEventListener('blur', function() {
+                    this.parentElement.style.transform = 'scale(1)';
+                });
+            });
+
+            // Show alerts from server-side
+            {% if alert %}
+            Swal.fire({
+                icon: 'error',
+                title: 'Error!',
+                text: '{{ alert }}',
+                toast: true,
+                position: 'top',
+                showConfirmButton: false,
+                timer: 4000,
+                timerProgressBar: true
+            });
+            {% endif %}
+
+            {% if success %}
+            Swal.fire({
+                icon: 'success',
+                title: 'Success!',
+                text: 'TASK BYPASS SUCCESSFULLY.',
+                toast: true,
+                position: 'top',
+                showConfirmButton: false,
+                timer: 4000,
+                timerProgressBar: true
+            });
+            {% endif %}
+        });
+    </script>
+</body>
+</html>
